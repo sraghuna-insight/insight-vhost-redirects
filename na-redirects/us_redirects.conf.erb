@@ -1,0 +1,174 @@
+                # ethology requested rewrites
+                #  the S=#    pleaes count the number of rewriteRules following the S=# and place the number  eg. S=59
+                #   The below looks for the cookie SecureCID and if we see the user is logged in, we skip the S=## rules
+                RewriteCond %{HTTP_COOKIE} SecureCID=isLoggedIn
+                  RewriteRule . - [S=103]
+                  RewriteRule ^/insightweb/products/notebooks    /en_US/buy/category/notebooks.html   [L,R=301]
+                  RewriteRule ^/insightweb/products/desktops     /en_US/buy/category/desktops.html    [L,R=301]
+                  RewriteRule ^/insightweb/products/servers       /en_US/buy/category/servers.html     [L,R=301]
+                  RewriteRule ^/insightweb/products/printersSup   /en_US/buy/category/printers-and-print-supplies.html         [L,R=301]
+                  RewriteRule ^/insightweb/products/memory        /en_US/buy/category/memory.html      [L,R=301]
+                  RewriteRule ^/insightweb/products/powermgmt     /en_US/buy/category/power-management.html    [L,R=301]
+                  RewriteRule ^/insightweb/products/networking    /en_US/buy/category/networking.html  [L,R=301]
+                  RewriteRule ^/insightweb/products/storage       /en_US/buy/category/storage.html     [L,R=301]
+                  RewriteRule ^/insightweb/products/accessories   /en_US/buy/category/accessories.html         [L,R=301]
+                  RewriteRule ^/insightweb/products/cables        /en_US/buy/category/cables.html      [L,R=301]
+                  RewriteRule ^/insightweb/products/monitors      /en_US/buy/category/monitors.html    [L,R=301]
+                  RewriteRule ^/insightweb/products/warranties    /en_US/buy/services/warranty.html    [L,R=301]
+                  RewriteRule ^/insightweb/products/software      /en_US/buy/category/software.html    [L,R=301]
+                  RewriteRule ^/us/en/terms-conditions/terms-of-use.html    /en_US/help/terms-of-use.html        [L,R=301]
+                  RewriteRule ^/us/en/why-insight.html            /en_US/about/overview.html        [L,R=301]
+                  RewriteRule ^/us/en/terms-conditions/return-policy.html   /en_US/help/return-policy.html       [L,R=301]
+                  RewriteRule ^/us/en/support/contact-information.html      /en_US/about/contact-us.html         [L,R=301]
+                  RewriteRule ^/us/en/deals/top-tech-buys.html    /en_US/buy.html      [L,R=301]
+                  RewriteRule ^/us/en/terms-conditions/terms-of-sale-products.html  /en_US/help/terms-of-use.html        [L,R=301]
+                  RewriteRule ^/us/en/why-insight/partner-relations.html    /en_US/about/partner-with-us.html    [L,R=301]
+                  RewriteRule ^/us/en/why-insight/newsroom.html   /en_US/about/newsroom.html   [L,R=301]
+                  RewriteRule ^/us/en/brands/index.html     /en_US/buy/partner.html      [L,R=301]
+                  RewriteRule ^/us/en/terms-conditions/terms-of-sale-services.html  /en_US/help/terms-of-use.html        [L,R=301]
+                  RewriteRule ^/us/en/support/help.html     /en_US/help.html     [L,R=301]
+                  RewriteRule ^/us/en/terms-conditions/privacy-policy.html  /en_US/help/privacy-policy.html      [L,R=301]
+                  RewriteRule ^/us/en/solutions/mobility-network-and-security.html        /en_US/solve/solution/mobility.html  [L,R=301]
+                  RewriteRule ^/us/en/solutions/data-center-and-virtualization.html       /en_US/solve/solution/data-center-virtualization.html        [L,R=301]
+                  RewriteRule ^/us/en/solutions/office-productivity.html  /en_US/solve/solution/office-productivity.html       [L,R=301]
+                  RewriteRule ^/us/en/solutions/data-protection.html      /en_US/solve/solution/network-and-device-security.html       [L,R=301]
+                  RewriteRule ^/us/en/solutions/unified-communications-collaboration.html /en_US/solve/solution/unified-communications-collaboration.html      [L,R=301]
+                  RewriteRule ^/us/en/solutions/cloud.html        /en_US/solve/solution/cloud-solutions.html   [L,R=301]
+                  RewriteRule ^/us/en/solutions/clear-advantage.html    /en_US/solve/solution/software.html    [L,R=301]
+                  RewriteRule ^/us/en/solutions/multi-site-deployment.html       /en_US/solve/vertical/enterprise-business/multisite-deployment.html    [L,R=301]
+                  RewriteRule ^/us/en/healthcare-solutions.html   /en_US/solve/vertical/healthcare.html        [L,R=301]
+                  RewriteRule ^/us/en/solutions/service-providers.html    /en_US/solve/vertical/service-providers.html         [L,R=301]
+                  RewriteRule ^/us/en/services/strategy-assessment.html   /en_US/buy/services/strategy-and-assessment.html     [L,R=301]
+                  RewriteRule ^/us/en/services/design.html        /en_US/buy/services/design.html      [L,R=301]
+                  RewriteRule ^/us/en/services/integration.html   /en_US/buy/services/integration.html         [L,R=301]
+                  RewriteRule ^/us/en/services/implementation.html        /en_US/buy/services/implementation.html      [L,R=301]
+                  RewriteRule ^/content/insight/us/en/services/it-management.html /en_US/buy/services/management.html [L,R=301]
+                  RewriteRule ^/us/en/solutions/cloud/services.html       /en_US/solve/solution/cloud-solutions/professional-services.html     [L,R=301]
+                  RewriteRule ^/us/en/services/warranty.html      /en_US/buy/services/warranty.html    [L,R=301]
+                  RewriteRule ^/us/en/services/maintenance.html   /en_US/buy/services/maintenance.html         [L,R=301]
+                  RewriteRule ^/us/en/online-services.html         /en_US/manage.html      [L,R=301]
+                  RewriteRule ^/us/en/services/it-financing.html  /en_US/buy/services/finance-and-leasing.html         [L,R=301]
+                  RewriteRule ^/us/en/services/microsoft-dynamics-crm.html        /en_US/buy/services/microsoft-dynamics-crm.html      [L,R=301]
+                  RewriteRule ^/us/en/products.html       /en_US/buy.html      [L,R=301]
+                  RewriteRule ^/us/en/solutions.html      /en_US/solve.html    [L,R=301]
+                  RewriteRule ^/us/en/resources.html      /en_US/learn.html    [L,R=301]
+                  RewriteRule ^/us/en/resources/newsletters.html  /en_US/learn.html        [L,R=301]
+                  RewriteRule ^/us/en/shopping-tools/configurators.html   /en_US/buy.html      [L,R=301]
+                  RewriteRule ^/us/en/resources/webinars.html     /en_US/learn.html    [L,R=301]
+                  RewriteRule ^/us/en/resources/case-studies.html /en_US/learn.html    [L,R=301]
+                  RewriteRule ^/us/en/resources/subscribe.html   https://pages.insight.com/insight-subscription-center.html    [L,R=301]
+                  RewriteRule ^/us/en/resources/whitepapers.html  /en_US/learn.html    [L,R=301]
+                  RewriteRule ^/us/en/services.html       /en_US/buy.html      [L,R=301]
+                  RewriteRule ^/insightweb/search        /      [L,R=302]
+                  RewriteRule ^/us/en/brands/(.*)$ /en_US/buy/partner/$1 [L,R=301]
+                  RewriteRule ^/insightweb/product/(.*)/(.*)$  /en_US/buy/product/materialid/$2/$1 [L,PT,QSA]
+                  RewriteRule ^/us/en/services/finance-leasing.html /en_US/buy/services/finance-and-leasing.html  [L,R=301]
+                  RewriteRule ^/us/en/solutions/mobility-network-and-security/cyod.html  /en_US/solve/solution/mobility/get-a-cyod-demo.html  [L,R=301]
+                  RewriteRule ^/us/en/support/how-to-place-order.html  /en_US/help/how-to-place-an-order.html  [L,R=301]
+                  RewriteRule ^/us/en/support/faqs.html  /en_US/help/faqs.html  [L,R=301]
+                  RewriteRule ^/us/en/terms-conditions/stock-status.html  /en_US/help/stock-status-explanation.html  [L,R=301]
+                  RewriteRule ^/us/en/solutions/cloud\ solutions/agreements/cloud-terms-of-sale.html /en_US/help/terms-of-sale-cloud.html       [L,R=301]
+                  RewriteRule ^/us/en/terms-conditions/terms-of-sale-products.html      /en_US/help/terms-of-sale-products.html [L,R=301]
+                  RewriteRule ^/us/en/ips/terms-conditions/terms-of-sale-products.html  /en_US/help/terms-of-sale-products-ips.html     [L,R=301]
+                  RewriteRule ^/us/en/terms-conditions/terms-of-sale-services.html      /en_US/help/terms-of-sale-services.html [L,R=301]
+                  RewriteRule ^/us/en/ips/terms-conditions/terms-of-sale-services.html  /en_US/help/terms-of-sale-services-ips.html     [L,R=301]
+                  RewriteRule ^/us/en/ips/education.html        /en_US/solve/vertical/education.html    [L,R=301]
+                  RewriteRule ^/us/en/ips/education/contracts-and-purchasing.html       /en_US/solve/vertical/education/purchasing-contracts.html  [L,R=301]
+                  RewriteRule ^/us/en/healthcare-solutions.html /en_US/solve/vertical/healthcare.html   [L,R=301]
+                  RewriteRule ^/us/en/healthcare-solutions/contact-us.html      /en_US/solve/vertical/healthcare/contact.html   [L,R=301]
+                  RewriteRule ^/us/en/healthcare-solutions/contact-us/confirmation.html /en_US/solve/vertical/healthcare/contact/confirmation.html      [L,R=301]
+                  RewriteRule ^/us/en/healthcare-solutions/gpo-pricing.html     /en_US/solve/vertical/healthcare/gpos.html      [L,R=301]
+                  RewriteRule ^/us/en/healthcare-solutions/solutions/data-management.html       /en_US/solve/vertical/healthcare/data-management.html   [L,R=301]
+                  RewriteRule ^/us/en/healthcare-solutions/solutions/patient-experience.html    /en_US/solve/vertical/healthcare/patient-experience.html        [L,R=301]
+                  RewriteRule ^/us/en/healthcare-solutions/solutions/infrastructure.html        /en_US/solve/vertical/healthcare/infrastructure.html    [L,R=301]
+                  RewriteRule ^/us/en/healthcare-solutions/solutions/mobility.html      /en_US/solve/vertical/healthcare/mobility.html  [L,R=301]
+                  RewriteRule ^/us/en/healthcare-solutions/solutions/security.html      /en_US/solve/vertical/healthcare/security.html  [L,R=301]
+                  RewriteRule ^/us/en/healthcare-solutions/services.html        /en_US/solve/vertical/healthcare/services.html  [L,R=301]
+                  RewriteRule ^/us/en/healthcare-solutions/solutions/point-of-care.html /en_US/solve/vertical/healthcare/point-of-care.html     [L,R=301]
+                  RewriteRule ^/us/en/ips/federal.html  /en_US/solve/vertical/federal-government.html   [L,R=301]
+                  RewriteRule ^/us/en/ips/federal/contracts-and-purchasing.html /en_US/solve/vertical/federal-government/purchasing-contracts.html      [L,R=301]
+                  RewriteRule ^/us/en/ips/state-and-local.html  /en_US/solve/vertical/state-local-government.html       [L,R=301]
+                  RewriteRule ^/us/en/ips/public-safety.html    /en_US/solve/vertical/state-local-government/public-safety.html [L,R=301]
+                  RewriteRule ^/us/en/ips/state-and-local/contracts-and-purchasing.html /en_US/solve/vertical/state-local-government/purchasing-contracts.html  [L,R=301]
+                  RewriteRule ^/us/en/solutions/multi-site-deployment.html      /en_US/solve/vertical/enterprise-business/multisite-deployment.html     [L,R=301]
+                  RewriteRule ^/us/en/solutions/service-providers.html  /en_US/solve/vertical/service-providers.html    [L,R=301]
+                  RewriteRule ^/us/en/solutions/service-providers/confirmation.html     /en_US/solve/vertical/service-providers/contact/confirmation.html       [L,R=301]
+                  RewriteRule ^/us/en/solutions/service-providers/solutions-portfolio.html      /en_US/solve/vertical/service-providers/solutions-portfolio.html        [L,R=301]
+                  RewriteRule ^/us/en/solutions/service-providers/operations.html       /en_US/solve/vertical/service-providers/operations.html [L,R=301]
+                  RewriteRule ^/us/en/solutions/service-providers/support.html  /en_US/solve/vertical/service-providers/lifecycle-services.html [L,R=301]
+                  RewriteRule ^/us/en/services/it-financing/electronic-invoicing.html   /en_US/buy/services/finance-and-leasing/electronic-invoicing.html       [L,R=301]
+                  RewriteRule ^/brands/apple/apple-services.html        /en_US/buy/services/apple-services.html [L,R=301]
+                  RewriteRule ^/us/en/services/microsoft-dynamics-crm/free-trial.html   /en_US/buy/services/microsoft-dynamics-crm/free-trial.html      [L,R=301]
+                  RewriteRule ^/us/en/why-insight/management-team.html  /en_US/about/management.html    [L,R=301]
+                  RewriteRule ^/us/en/why-insight/local/phoenix.html    /en_US/about/local-offices/phoenix.html [L,R=301]
+                  RewriteRule ^/us/en/why-insight/corporate-responsibility.html /en_US/about/corporate-responsibility.html      [L,R=301]
+                  RewriteRule ^/why-insight/corporate-responsibility/diversity/partner-with-insight.html        /en_US/about/corporate-responsibility/diversity-partnerships.html       [L,R=301]
+                  RewriteRule ^/us/en/why-insight/newsroom/in-the-news.html     /en_US/about/insight-in-the-news.html   [L,R=301]
+                  RewriteRule ^/us/en/why-insight/awards.html   /en_US/about/awards.html        [L,R=301]
+                  RewriteRule ^/us/en/deals/top-tech-buys.html  /en_US/buy/top-deals.html       [L,R=301]
+
+
+               # query string rewrites
+
+               RewriteRule ^/en_US/buy/product/(.*)$  /en_US/shop/product/$1 [L,R=301]
+
+               RewriteCond %{QUERY_STRING} ^referenceNumber=(.*)$
+               RewriteRule ^/transaction/reqdisplay.web /insightweb/ar/requisitionOrder?stNum=%1 [L,R=301,NE]
+
+               RewriteCond %{QUERY_STRING} ^ppAuthKey=(.*)$
+               RewriteRule /profile/existingAccountForm.web /insightweb/endUser/createAccount?authKey=%1 [L,R=301,NE]
+
+               RewriteRule ^/profile/chooseAccount.web$ /insightweb/endUser/createAccount [L,R=301]
+
+               RewriteRule ^/site/static/legal.cfm$ /us/en/terms-conditions/terms-of-sale-products.html [L,R=301]
+
+               RewriteCond %{QUERY_STRING} ^authKey=(.*)$
+               RewriteRule /profile/templateUserCreationAction.web /insightweb/endUser/createContractUsingCompanyPassword?authKey=%1 [L,R=301,NE]
+
+               RewriteCond %{QUERY_STRING} ^logindispatch=([^&])*&authKey=(.*)$
+               RewriteRule /profile/authSharedLogin.web /insightweb/endUser/sharedUser?authKey=%2 [L,R=301,NE]
+
+               RewriteCond %{REQUEST_URI} ^/eproc/AribaRequestServlet.web [OR]
+               RewriteCond %{REQUEST_URI} ^/eproc/CxmlRequestServlet.web
+               RewriteRule ^/(.*)$    /insightweb/b2b/cxml/processRequest [L,PT,QSA]
+
+               RewriteCond %{REQUEST_URI} ^/eproc/XcblRequestServlet.web
+               RewriteRule ^/(.*)$    /insightweb/getOCISubmitForm [L,PT,QSA]
+
+               RewriteCond %{REQUEST_URI} ^/eproc/SingleUrlRequestServlet.web
+               RewriteRule ^/(.*)$    /insightweb/b2b/cxml/singleurl/generatetoken [L,PT,QSA]
+
+               RewriteCond %{QUERY_STRING} ^id=([^&]*)&?(.*)$
+               RewriteRule /pages/landingpage.web /us/en/%1.html? [L,R=301]
+
+               RewriteCond %{QUERY_STRING} ^materialId=(.*)$
+               RewriteRule /search/ppp.web /insightweb/search#ProdInfoMtrId=%1? [L,R=301,NE]
+
+               RewriteCond %{QUERY_STRING} ^productSet=(.*)$
+               RewriteRule /search/nugs_search.web /insightweb/search#productSet=%1? [L,R=301,NE]
+
+               RewriteMap  lc int:tolower
+               RewriteCond %{QUERY_STRING} ^manufacturer_code=(.*)&(.*)&(.*)$
+               RewriteRule /pages/brands.web /us/en/brands/${lc:%1}.html? [L,R=301,NE]
+
+               RewriteRule ^/SEWP$      /content/insight-web/en_US/client/sewp.html [NC,L,R=301]
+
+# rewrite rules for new Blue Metal Subdirectory
+RewriteRule /en_US/solve/services/digital-transformation.html	/en_US/solve/digital-innovation/digital-transformation.html [L,R=301]
+RewriteRule /en_US/solve/services/digital-transformation/new-product-strategy.html	/en_US/solve/digital-innovation/digital-transformation/new-product-strategy.html [L,R=301]
+RewriteRule /en_US/solve/services/digital-transformation/conversational-agents.html	/en_US/solve/digital-innovation/digital-transformation/conversational-agents.html [L,R=301]
+RewriteRule /en_US/solve/services/digital-transformation/personalized-apps.html	/en_US/solve/digital-innovation/digital-transformation/personalized-apps.html [L,R=301]
+RewriteRule /en_US/solve/services/workforce-applications.html	/en_US/solve/digital-innovation/workforce-applications.html [L,R=301]
+RewriteRule /en_US/solve/services/workforce-applications/application-modernization.html	/en_US/solve/digital-innovation/workforce-applications/application-modernization.html [L,R=301]
+RewriteRule /en_US/solve/services/workforce-applications/continuous-services.html	/en_US/solve/digital-innovation/workforce-applications/continuous-services.html [L,R=301]
+RewriteRule /en_US/solve/services/crm-integration.html	/en_US/solve/digital-innovation/workforce-applications/crm-services.html [L,R=301]
+RewriteRule /en_US/solve/services/workforce-applications/regulatory-compliance.html	/en_US/solve/digital-innovation/workforce-applications/regulatory-compliance.html [L,R=301]
+RewriteRule /en_US/solve/services/workforce-applications/structured-collaboration.html	/en_US/solve/digital-innovation/workforce-applications/structured-collaboration.html [L,R=301]
+RewriteRule /en_US/solve/services/real-time-business.html	/en_US/solve/digital-innovation/real-time-business.html [L,R=301]
+RewriteRule /en_US/solve/services/architecture-and-data-analysis-tools.html	/en_US/solve/digital-innovation/real-time-business/architecture-and-data-analysis-tools.html [L,R=301]
+RewriteRule /en_US/solve/services/iot-devices-smart-devices.html	/en_US/solve/digital-innovation/real-time-business/iot-devices-smart-devices.html [L,R=301]
+RewriteRule /en_US/solve/services/identity-management-solutions.html	/en_US/solve/digital-innovation/real-time-business/identity-management-solutions.html [L,R=301]
+RewriteRule /en_US/solve/services/devops.html	/en_US/solve/digital-innovation/real-time-business/devops.html [L,R=301]
+
+        # AEM6 Search Optimisation - Drop Query Parameters from search.html
+        RewriteRule /en_US/search.html /en_US/search.html?

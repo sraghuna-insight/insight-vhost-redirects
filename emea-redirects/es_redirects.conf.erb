@@ -1,0 +1,7 @@
+RewriteRule ^/es/apps/cart/myorder.php  /insightweb/viewCart   [L,R=301]
+RewriteRule ^/apps/account/index.php  /insightweb/login   [L,R=301]
+RewriteRule ^/apps/signup/newaccount.php  /insightweb/endUser/createAccount   [L,R=301]
+RewriteRule ^/apps/problemsolver/index.php  /es_ES/help/web-support-assistance.html   [L,R=301]
+RewriteRule ^/apps/legal/policies.php  /es_ES/help/terms-of-sale-products.html   [L,R=301]
+
+RewriteRule ^/es/(.*)$ /es_ES/$1 [L,R=301,QSA]

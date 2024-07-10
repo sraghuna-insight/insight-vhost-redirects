@@ -1,0 +1,7 @@
+RewriteRule ^/sv/apps/cart/myorder.php  /insightweb/viewCart   [L,R=301]
+RewriteRule ^/apps/account/index.php  /insightweb/login   [L,R=301]
+RewriteRule ^/apps/signup/newaccount.php  /insightweb/endUser/createAccount   [L,R=301]
+RewriteRule ^/apps/problemsolver/index.php  /sv_SE/help/web-support-assistance.html   [L,R=301]
+RewriteRule ^/apps/legal/policies.php  /sv_SE/help/terms-of-sale-products.html   [L,R=301]
+
+RewriteRule ^/sv/(.*)$ /sv_SE/$1 [L,R=301,QSA]
